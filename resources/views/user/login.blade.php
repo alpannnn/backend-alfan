@@ -43,7 +43,7 @@
                     left: 0;
                     height: 100%;
                     width: 100%;
-                    background: rgba(0, 0, 0, 0.7);
+                    background: url('{{asset('dist/img/galaxy1.jpg')}}');
                 }
 
                 .content {
@@ -55,7 +55,7 @@
                     padding: 60px 32px;
                     width: 370px;
                     transform: translate(-50%, -50%);
-                    background: rgba(255, 255, 255, 0.04);
+                    background: none ;
                     box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
                 }
 
@@ -73,6 +73,7 @@
                     width: 100%;
                     display: flex;
                     background: rgba(255, 255, 255, 0.94);
+                    opacity: 80%;
                 }
 
                 .field span {
@@ -142,7 +143,7 @@
                 }
 
                 .login {
-                    color: white;
+                    color: blue;
                     margin: 20px 0;
                     font-family: 'Poppins', sans-serif;
                 }
@@ -152,41 +153,6 @@
                     cursor: pointer;
                     color: white;
                     margin: 0 0 20px 0;
-                }
-
-                .facebook,
-                .instagram {
-                    width: 100%;
-                    height: 45px;
-                    line-height: 45px;
-                    margin-left: 10px;
-                }
-
-                .facebook {
-                    margin-left: 0;
-                    background: #4267B2;
-                    border: 1px solid #3e61a8;
-                    margin: 20px 0;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                .instagram {
-                    background: #E1306C;
-                    border: 1px solid #df2060;
-                    margin: 20px 0;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                .facebook:hover {
-                    background: #3e61a8;
-                }
-
-                .instagram:hover {
-                    background: #df2060;
-                }
-
-                .links i {
-                    font-size: 17px;
                 }
 
                 i span {
@@ -240,6 +206,7 @@
                             <!-- <button class="btn btn-primary">Login</button> -->
                         </div>
                     </form>
+                    <br>
                     <div class="signup">
                         Don't have account?
                         <a href="register">Register</a>
