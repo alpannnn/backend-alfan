@@ -27,9 +27,9 @@
                 <strong>Jam Kerja:</strong>
                 <select name="jam_kerja" class="form-control">
                     <option value="">Pilih Jam Kerja</option>
-                    <option value="jam_kerja Pagi" {{ $jadwal->jam_kerja == 'jam_kerja pagi ? 'selected' : '' }}>08.00 - 13.00</option>
-                    <option value="jam_kerja Sore" {{ $jadwal->jam_kerja == 'jam_kerja sore' ? 'selected' : '' }}>13.00 - 20.00</option>
-                    <option value="jam_kerja Malam" {{ $jadwal->jam_kerja == 'jam_kerja malam' ? 'selected' : '' }}>20.00 - 01.00</option>
+                    <option value="Shift Pagi" {{ $jadwal->jam_kerja == 'jam_kerja pagi' ? 'selected' : '' }}>08.00 - 13.00</option>
+                    <option value="Shift Sore" {{ $jadwal->jam_kerja == 'jam_kerja sore' ? 'selected' : '' }}>13.00 - 20.00</option>
+                    <option value="Shift Malam" {{ $jadwal->jam_kerja == 'jam_kerja malam' ? 'selected' : '' }}>20.00 - 01.00</option>
                     <!-- Tambahkan opsi jam_kerja sesuai kebutuhan -->
                 </select>
                 @error('jam_kerja')

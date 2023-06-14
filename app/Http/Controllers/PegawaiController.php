@@ -10,14 +10,14 @@ class PegawaiController extends Controller
     public function index()
     {
         $title = "Data Master Pegawai";
-        $Pegawais = Pegawais::orderBy('id', 'asc')->paginate(5);
+        $Pegawais = Pegawai::orderBy('id', 'asc')->paginate(5);
         return view('pegawais.index', compact(['pegawais', 'title']));
     }
 
     public function create()
     {
         $title = "Tambah Data Pegawai";
-        $dokters = Pegawais::all();
+        $pegawais = Pegawais::all();
         return view('pegawais.create', compact('title', 'jadwals'));
     }
 

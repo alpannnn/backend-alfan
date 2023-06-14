@@ -22,7 +22,7 @@
   </thead>
   <tbody>
     @php $no = 1 @endphp
-    @foreach ($jadwals as $data)
+    @foreach ($jadwal as $data)
     <tr class="table-hover-color">
       <td>{{ $no ++ }}</td>
       <!-- <td>{{ $data->id }}</td> -->

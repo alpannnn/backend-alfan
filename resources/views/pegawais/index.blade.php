@@ -10,7 +10,7 @@
 
 <div class="text-end mb-2">
   <a class="btn btn-light" href="{{ route('exporExcel') }}">Cetak</a>
-  <a class="btn btn-success" href="{{ route('pegawais.create') }}">Add Pegawai</a>
+  <a class="btn btn-success" href="{{ route('departements.create') }}">Add Pegawai</a>
 </div>
 
 <table class="table">
@@ -27,7 +27,7 @@
   </thead>
   <tbody>
     @php $no = 1 @endphp
-    @foreach($pegawais as $data)
+    @foreach($departements as $data)
     <tr class="table-hover-color">
       <td>{{ $no++ }}</td>
       <!-- <td>{{ $data->id }}</td> -->
@@ -37,8 +37,8 @@
       <td>{{ $data->shift }}</td>
       <td>{{ $data->jadwal }}</td>
       <td>
-        <form action="{{ route('pegawais.destroy', $data->id) }}" method="POST">
-          <a class="btn btn-primary" href="{{ route('pegawais.edit', $data->id) }}">Edit</a>
+        <form action="{{ route('departements.destroy', $data->id) }}" method="POST">
+          <a class="btn btn-primary" href="{{ route('departements.edit', $data->id) }}">Edit</a>
           @csrf
           @method('DELETE')
           <button type="submit" class="btn btn-danger">Delete</button>
