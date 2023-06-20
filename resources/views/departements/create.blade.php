@@ -6,8 +6,8 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>name:</strong>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Masukan name">
+                <strong>Name:</strong>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Masukan Name">
                 @error('name')
                 <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                 @enderror

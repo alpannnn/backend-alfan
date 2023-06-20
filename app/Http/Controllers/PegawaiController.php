@@ -8,11 +8,12 @@ use App\Models\Pegawais;
 class PegawaiController extends Controller
 {
     public function index()
-    {
-        $title = "Data Master Pegawai";
-        $Pegawais = Pegawai::orderBy('id', 'asc')->paginate(5);
-        return view('pegawais.index', compact(['pegawais', 'title']));
-    }
+{
+    $title = "Data Master Pegawai";
+    $pegawais = \App\Models\Pegawai::orderBy('id', 'asc')->paginate(5);
+    return view('pegawais.index', compact('pegawais', 'title'));
+}
+
 
     public function create()
     {

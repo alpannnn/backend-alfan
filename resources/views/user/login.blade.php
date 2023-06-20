@@ -43,7 +43,7 @@
                     left: 0;
                     height: 100%;
                     width: 100%;
-                    background: url('{{asset('dist/img/galaxy1.jpg')}}');
+                    background: url('{{asset('dist/img/photo4.jpg')}}');
                 }
 
                 .content {
